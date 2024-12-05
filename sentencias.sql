@@ -49,7 +49,7 @@ group by v.vehicle_type
 order by NumeroAccidentes asc
 limit 3;
 
--- Sentencia 8 (No compila)
+-- Sentencia 8
 select count(cv.unique_id) as NumeroAccidentes, v.vehicle_make
 from final.final_colisionVehiculos as cv left join final.final_vehiculos as v on cv.vehicle_id = v.vehicle_id
 group by v.vehicle_make
