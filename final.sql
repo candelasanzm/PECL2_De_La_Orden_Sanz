@@ -119,7 +119,7 @@ INSERT INTO final.final_accidentes (crash_date,
                               contributing_factor_vehicle_5,
                               collision_id)
 SELECT
-    TO_DATE(temporal.accidentes.crash_date, 'MM/DD/YYYY'),
+    TO_DATE(temporal.temp_accidentes.crash_date, 'MM/DD/YYYY'),
     CAST(crash_time AS time),
     CAST(borough AS varchar(512)),
     CAST(zip_code AS varchar(5)),
