@@ -29,7 +29,7 @@ order by NumeroAccidentes desc;
 select position_in_vehicle, person_id, person_age
 from final.final_colisionPersona
 where position_in_vehicle in ('Driver') and (person_age > 65 or person_age < 26)
-order by person_age desc;
+order by person_age asc;
 
 -- Sentencia 6
 select distinct final_persona.*, final_vehiculos.vehicle_type
